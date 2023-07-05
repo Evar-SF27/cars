@@ -2,6 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+## This is a NextJS 13 Tutorial
 This is a Full Stack web application built with the latest version of Next JS.
 The app is built using TypeScript and Tailwind CSS and uses an API provided by RapidAPI.
 This is a car's showcase application.
