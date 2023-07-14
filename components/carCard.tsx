@@ -5,6 +5,7 @@ import { CarProps } from '@types'
 import Image from 'next/image'
 import CustomButton from './customButton'
 import { calculateCarRent } from '@utils'
+import { CarDetails } from '@components'
 
 interface CarCardProps {
     car: CarProps
@@ -33,7 +34,7 @@ const CarCard = ({ car } : CarCardProps) => {
         <div className="relative w-full h-40 my-3 object-contain">
            <Image 
                 src="/hero.png" 
-                alt="caar model"
+                alt="car model"
                 fill 
                 priority
                 className="object-contain"
@@ -85,6 +86,11 @@ const CarCard = ({ car } : CarCardProps) => {
                 />
             </div>
         </div>
+        <CarDetails 
+            isOpen={isOpen}
+            closeModal={() => setIsOpen(false)}
+            car={car}
+        />
     </div>
   )
 }

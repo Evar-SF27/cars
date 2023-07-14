@@ -4,7 +4,7 @@ export async function fectchCars() {
         'X-RapidAPI-Host': `${process.env.X_HOST}`
     }
 
-    const url = 'https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?model=corolla'
+    const url = 'https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?model=carrera'
     const response = await fetch(url, { headers: headers })
     const result = await response.json()
 
